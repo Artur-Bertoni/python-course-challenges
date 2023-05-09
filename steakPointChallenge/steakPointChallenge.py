@@ -18,13 +18,13 @@ message = ''
 
 if temperature < 48:
     message = 'Cozinhar por mais alguns minutos'
-elif 54 > temperature >= 48:
+elif temperature in range(48, 53):
     message = 'Selada'
-elif 60 > temperature >= 54:
+elif temperature in range(54, 59):
     message = 'Ao ponto para o mal'
-elif 65 > temperature >= 60:
+elif temperature in range(60, 64):
     message = 'Ao ponto'
-elif 71 > temperature >= 65:
+elif temperature in range(65, 70):
     message = 'Ao ponto para o bem'
 else:
     message = 'Bem passada'
